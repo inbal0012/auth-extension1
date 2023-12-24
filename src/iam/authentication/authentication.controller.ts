@@ -2,7 +2,7 @@ import { Body, Controller, HttpCode, HttpStatus, Post } from '@nestjs/common';
 import { AuthenticationService } from './authentication.service';
 import { SignInDto } from './dto/sign-in.dto';
 import { SignUpDto } from './dto/sign-up.dto';
-import { Auth } from '../decorators/auth.decorator';
+import { Auth } from './decorators/auth.decorator';
 import { AuthType } from '../enum/auth-type.enum';
 
 @Auth(AuthType.None)
