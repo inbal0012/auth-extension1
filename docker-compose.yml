@@ -6,5 +6,5 @@ services:
    ports:
      - "5433:5433"
    environment:
-     POSTGRES_PASSWORD: inbal
+     POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD
      
